@@ -1,5 +1,6 @@
 package com.example.appkotlinpmdm
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var layoutMini: ConstraintLayout
     lateinit var buttonCambiarColor: Button
+    lateinit var buttonCambiarActivity: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,9 +19,14 @@ class MainActivity : AppCompatActivity() {
 
         layoutMini = findViewById(R.id.layoutMini)
         buttonCambiarColor = findViewById(R.id.buttonCambiarColor)
+        buttonCambiarActivity = findViewById(R.id.buttonCambiarActivity)
 
         buttonCambiarColor.setOnClickListener {
             cambiaColor()
+        }
+
+        buttonCambiarActivity.setOnClickListener {
+            cambiaActivity()
         }
     }
 
@@ -31,5 +38,10 @@ class MainActivity : AppCompatActivity() {
         val color = Color.rgb(red, green, blue)
 
         layoutMini.setBackgroundColor(color)
+    }
+
+    fun cambiaActivity() {
+        val intent = Intent(this, Activity2::class.java)
+        startActivity(intent)
     }
 }
