@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph_auth"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -21,9 +21,21 @@
         android:name="com.example.appkotlinpmdm.fragments.RegisterFragment"
         android:label="RegisterFragment"
         tools:layout="@layout/register_fragment" >
-        >
+
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.appkotlinpmdm.fragments.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/splash_fragment" >
+
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
 </navigation>
