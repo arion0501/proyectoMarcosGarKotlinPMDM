@@ -5,6 +5,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
@@ -41,7 +42,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun cambiaActivity() {
+        val inputText = findViewById<EditText>(R.id.inputTxtInicio).text.toString()
         val intent = Intent(this, Activity2::class.java)
+        intent.putExtra("textoDesdeMain", inputText)
         startActivity(intent)
     }
 }

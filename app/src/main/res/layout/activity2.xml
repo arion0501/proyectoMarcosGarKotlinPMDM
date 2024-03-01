@@ -34,4 +34,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtInicioActv2" />
+
+    <TextView
+        android:id="@+id/txtFromMainActivity"
+        android:layout_width="133dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="94dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCambiarActivity2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInicioActv2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
