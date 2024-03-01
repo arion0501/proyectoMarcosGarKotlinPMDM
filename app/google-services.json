@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "891260774212",
+    "project_id": "actividad5pmdmmarcosgarcia",
+    "storage_bucket": "actividad5pmdmmarcosgarcia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891260774212:android:4c64f9b3ce46dd5a4cd911",
+        "android_client_info": {
+          "package_name": "com.example.appkotlinpmdm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaHmA4FVmlR3wEl-EbhdZAZJM3TMBPx4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
